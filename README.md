@@ -1,4 +1,4 @@
-# Getting Started Users-List App
+# Getting Started Users-List SPA
 
 ## Steps to Run App
 
