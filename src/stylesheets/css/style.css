@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  transition: all .15s ease;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-radius;
+}
+
+.container {
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  background-color: #128cfc;
+}
+
+.items {
+  min-width: 50%;
+  background: #fffffe;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-top: 10px solid #0b5aa2;
+}
+
+.items-head p {
+  padding: 5px 20px;
+  margin: 10px;
+  color: #0b5aa2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items-head hr {
+  width: 20%;
+  margin: 0px 30px;
+  border: 1px solid #0b5aa2;
+}
+
+.items-body {
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.items-body-content {
+  padding: 10px;
+  padding-right: 0px;
+  background-color: lightblue;
+  font-size: 13px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.items-body-content:hover {
+  border-radius: 15px;
+  border: 1px solid #0b5aa2;
+  transform: scale(1.1);
+}
+
+.items-body-content .collapsed-item {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-body-content .collapsed-item .data-flex {
+  flex-basis: 40%;
+}
+
+.items-body-content .intrests-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 40px;
+  flex-direction: column;
+}
+
+.items-body-content .intrests-wrapper span {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0px;
+  margin: 0px 5px;
+}
+
+.items-body-content .intrests-wrapper span:hover {
+  background-color: #fff;
+  padding: 7px 0px;
+}
+
+i {
+  align-self: center;
+  font-size: 15px;
+  color: #0b5aa2;
+  font-weight: bold;
+  animation: icon 1.5s infinite forwards;
+}
+
+@keyframes icon {
+  0%,
+  100% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(3px);
+  }
+}
+
+.users-empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.users-empty-state span {
+  color: #0b5aa2;
+  cursor: pointer;
+}
+
+.users-empty-state span:hover {
+  color: #128cfc;
+}
+
+.note-wrapper {
+  text-align: center;
+}
+
+.anticon-delete {
+  color: #d01b1b;
+  font-size: 20px;
+}
