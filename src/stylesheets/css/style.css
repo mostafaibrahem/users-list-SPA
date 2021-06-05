@@ -22,6 +22,7 @@ body {
   display: grid;
   place-items: center;
   background-color: #128cfc;
+  height: fit-content;
 }
 
 .items {
